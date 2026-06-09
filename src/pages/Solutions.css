@@ -1,0 +1,181 @@
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.sol-card {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sol-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.sol-card-top .icon-box { margin-bottom: 0; flex-shrink: 0; }
+
+.sol-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.sol-subtitle {
+  font-size: 12px;
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.sol-desc {
+  font-size: 13px;
+  color: var(--gray-600);
+  line-height: 1.65;
+}
+
+.sol-benefits { flex: 1; }
+
+.sol-use-cases {
+  padding: 10px 14px;
+  background: var(--gray-50);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--gray-200);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.sol-uc-label { font-weight: 700; color: var(--gray-600); }
+.sol-uc-text { color: var(--gray-500); }
+
+.sol-btn { width: 100%; justify-content: center; }
+
+/* Biometric Section */
+.biometric-section {
+  background: linear-gradient(135deg, var(--navy) 0%, #0d2d6b 100%);
+}
+
+.bio-type-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: var(--transition);
+}
+
+.bio-type-card:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-4px);
+}
+
+.bio-type-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.bio-type-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.bio-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bio-specs li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+}
+
+.bio-specs li i {
+  color: var(--secondary);
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+/* Access cards */
+.acc-card {
+  padding: 24px;
+}
+
+.acc-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.acc-desc {
+  font-size: 13px;
+  color: var(--gray-600);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+/* Construction two-col */
+.sol-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.sol-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.sol-vis-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--gray-200);
+  width: 100%;
+  max-width: 420px;
+}
+
+.sol-vis-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  font-size: 14px;
+  color: var(--gray-700);
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.sol-vis-item:last-child { border-bottom: none; }
+
+.sol-vis-item i {
+  color: var(--secondary);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .solutions-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .sol-two-col { grid-template-columns: 1fr; }
+  .sol-visual { display: none; }
+}
+
+@media (max-width: 640px) {
+  .solutions-grid { grid-template-columns: 1fr; }
+}

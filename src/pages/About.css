@@ -1,0 +1,329 @@
+/* Story */
+.about-story {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 56px;
+  align-items: start;
+}
+
+.story-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.story-text p {
+  font-size: 16px;
+  color: var(--gray-700);
+  line-height: 1.8;
+}
+
+.about-stats-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--gray-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  margin-bottom: 20px;
+}
+
+.about-stat {
+  background: white;
+  padding: 24px;
+  text-align: center;
+}
+
+.about-stat-num {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--primary);
+  letter-spacing: -0.03em;
+  margin-bottom: 4px;
+}
+
+.about-stat-label {
+  font-size: 12px;
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.about-tagline-card {
+  background: linear-gradient(135deg, var(--navy) 0%, #0d2d6b 100%);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.about-tagline-card blockquote {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  font-style: italic;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.about-tagline-card p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+}
+
+/* Mission */
+.mission-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.mission-card {
+  text-align: center;
+  padding: 36px 24px;
+  background: white;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-md);
+}
+
+.mission-icon { font-size: 40px; margin-bottom: 16px; }
+
+.mission-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.mission-card p {
+  font-size: 14px;
+  color: var(--gray-600);
+  line-height: 1.7;
+}
+
+/* About sys card */
+.about-sys-card {
+  padding: 24px;
+}
+
+.sys-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.sys-desc {
+  font-size: 13px;
+  color: var(--gray-600);
+  line-height: 1.65;
+}
+
+/* SmartGoGo */
+.smartgogo-section {
+  background: linear-gradient(135deg, var(--navy) 0%, #0d2d6b 100%);
+}
+
+.sgg-content {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 56px;
+  align-items: center;
+}
+
+.sgg-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sgg-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: rgba(255,255,255,0.85);
+}
+
+.sgg-feature span:first-child { font-size: 20px; flex-shrink: 0; }
+
+.sgg-visual { display: flex; justify-content: center; }
+
+.sgg-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  width: 100%;
+  box-shadow: var(--shadow-2xl);
+}
+
+/* BAS */
+.about-bas {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.bas-visual { display: flex; justify-content: center; }
+
+.bas-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--gray-200);
+  text-align: center;
+  width: 100%;
+}
+
+.bas-icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.bas-icon-item {
+  width: 48px;
+  height: 48px;
+  background: var(--primary-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.bas-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.bas-card p {
+  font-size: 13px;
+  color: var(--gray-500);
+  margin-bottom: 20px;
+}
+
+.bas-modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.bas-mode-pill {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--primary-light);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--gray-200);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: calc(50% + 28px);
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.timeline-item.right {
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: calc(50% + 28px);
+}
+
+.tl-content {
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  box-shadow: var(--shadow-sm);
+  max-width: 280px;
+}
+
+.tl-year {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.tl-event {
+  font-size: 13px;
+  color: var(--gray-700);
+  line-height: 1.5;
+}
+
+.tl-dot {
+  position: absolute;
+  left: 50%;
+  top: 14px;
+  width: 12px;
+  height: 12px;
+  background: var(--primary);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+/* Philosophy */
+.phil-card {
+  padding: 24px;
+  text-align: center;
+}
+
+.phil-icon { font-size: 32px; display: block; margin-bottom: 14px; }
+.phil-title { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
+.phil-desc { font-size: 13px; color: var(--gray-600); line-height: 1.65; }
+
+@media (max-width: 1024px) {
+  .about-story { grid-template-columns: 1fr; }
+  .story-right { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .about-tagline-card { grid-column: 1 / -1; }
+  .sgg-content { grid-template-columns: 1fr; }
+  .sgg-visual { display: none; }
+  .about-bas { grid-template-columns: 1fr; }
+  .bas-visual { display: none; }
+  .mission-section { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .timeline::before { left: 16px; }
+  .timeline-item,
+  .timeline-item.right {
+    padding-right: 0;
+    padding-left: 44px;
+    justify-content: flex-start;
+  }
+  .tl-dot { left: 16px; }
+  .tl-content { max-width: 100%; }
+}
+
+@media (max-width: 640px) {
+  .story-right { grid-template-columns: 1fr; }
+}
