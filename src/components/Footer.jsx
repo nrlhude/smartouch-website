@@ -31,11 +31,7 @@ export default function Footer() {
             {/* Brand */}
             <div className="footer-brand">
               <Link to="/" className="footer-logo">
-                <div className="footer-logo-mark"><span>ST</span></div>
-                <div>
-                  <div className="footer-logo-main">Smart Touch</div>
-                  <div className="footer-logo-sub">Technology Sdn Bhd</div>
-                </div>
+                <img src="/logo.svg" alt="Smart Touch Technology" className="footer-logo-img" />
               </Link>
               <p className="footer-tagline">
                 Building Smarter Workforces, Safer Operations.<br />
@@ -60,7 +56,7 @@ export default function Footer() {
               <div className="footer-social">
                 <a href="#" aria-label="Facebook" className="social-icon"><i className="fa-brands fa-facebook-f" /></a>
                 <a href="#" aria-label="LinkedIn" className="social-icon"><i className="fa-brands fa-linkedin-in" /></a>
-                <a href="#" aria-label="YouTube" className="social-icon"><i className="fa-brands fa-youtube" /></a>
+                <a href="https://www.youtube.com/@smartime01" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="social-icon yt"><i className="fa-brands fa-youtube" /></a>
                 <a href="#" aria-label="Instagram" className="social-icon"><i className="fa-brands fa-instagram" /></a>
               </div>
             </div>

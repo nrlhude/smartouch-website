@@ -55,13 +55,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} ref={navRef}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <div className="logo-mark">
-            <span>ST</span>
-          </div>
-          <div className="logo-text">
-            <span className="logo-main">Smart Touch</span>
-            <span className="logo-sub">Technology</span>
-          </div>
+          <img src="/logo.svg" alt="Smart Touch Technology" className="navbar-logo-img" />
         </Link>
 
         <div className="navbar-links">

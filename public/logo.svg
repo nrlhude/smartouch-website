@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 92" role="img" aria-label="Smart Touch Technology">
+  <defs>
+    <radialGradient id="circleGrad" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#e81c1c"/>
+      <stop offset="100%" stop-color="#991010"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Red circle -->
+  <circle cx="46" cy="46" r="44" fill="url(#circleGrad)"/>
+
+  <!-- White circuit / chip icon -->
+  <!-- 3 vertical bars (IC body) -->
+  <rect x="34" y="26" width="6.5" height="40" rx="2.5" fill="white"/>
+  <rect x="44.5" y="19" width="6.5" height="54" rx="2.5" fill="white"/>
+  <rect x="55" y="26" width="6.5" height="40" rx="2.5" fill="white"/>
+
+  <!-- Left horizontal pins -->
+  <rect x="17" y="31.5" width="17" height="4" rx="2" fill="white"/>
+  <rect x="17" y="42.5" width="17" height="4" rx="2" fill="white"/>
+  <rect x="17" y="53.5" width="17" height="4" rx="2" fill="white"/>
+  <!-- Left dots -->
+  <circle cx="13" cy="33.5" r="5" fill="white"/>
+  <circle cx="13" cy="44.5" r="5" fill="white"/>
+  <circle cx="13" cy="55.5" r="5" fill="white"/>
+
+  <!-- Right horizontal pins -->
+  <rect x="61.5" y="31.5" width="17" height="4" rx="2" fill="white"/>
+  <rect x="61.5" y="42.5" width="17" height="4" rx="2" fill="white"/>
+  <rect x="61.5" y="53.5" width="17" height="4" rx="2" fill="white"/>
+  <!-- Right dots -->
+  <circle cx="83" cy="33.5" r="5" fill="white"/>
+  <circle cx="83" cy="44.5" r="5" fill="white"/>
+  <circle cx="83" cy="55.5" r="5" fill="white"/>
+
+  <!-- SMART text -->
+  <text x="104" y="50"
+        font-family="Impact, 'Arial Narrow', Arial, sans-serif"
+        font-size="38"
+        fill="#CC1414"
+        letter-spacing="1">SMART</text>
+
+  <!-- TOUCH text -->
+  <text x="104" y="87"
+        font-family="Impact, 'Arial Narrow', Arial, sans-serif"
+        font-size="38"
+        fill="#CC1414"
+        letter-spacing="1">TOUCH</text>
+</svg>

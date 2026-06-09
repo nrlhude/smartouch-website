@@ -5,9 +5,9 @@
 }
 
 :root {
-  --primary: #0052CC;
-  --primary-dark: #003d99;
-  --primary-light: #e8f0fe;
+  --primary: #CC1414;
+  --primary-dark: #a30f0f;
+  --primary-light: #fde8e8;
   --secondary: #00B894;
   --secondary-dark: #00966b;
   --accent: #FF6B35;
@@ -133,7 +133,7 @@ ul, ol { list-style: none; }
   background: var(--primary-dark);
   border-color: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,82,204,0.35);
+  box-shadow: 0 8px 24px rgba(204,20,20,0.35);
 }
 
 .btn-secondary {

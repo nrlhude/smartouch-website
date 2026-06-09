@@ -275,20 +275,28 @@ export default function Contact() {
         <div className="container">
           <h2 className="map-title">Find Our Office</h2>
           <p className="map-sub">36-02 &amp; 36-03, Jalan Permas 10, Bandar Baru Permas Jaya, 81750 Masai, Johor, Malaysia</p>
-          <div className="map-placeholder">
-            <div className="map-inner">
-              <i className="fa-solid fa-map-location-dot" />
-              <h3>Smart Touch Technology Sdn Bhd</h3>
-              <p>36-02 &amp; 36-03, Jalan Permas 10<br />Bandar Baru Permas Jaya, 81750 Masai, Johor</p>
-              <a
-                href="https://www.google.com/maps/search/Smart+Touch+Technology+Johor+Bahru"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-              >
-                <i className="fa-solid fa-directions" /> Get Directions
-              </a>
-            </div>
+          <div className="map-embed-wrap">
+            <iframe
+              title="Smart Touch Technology Office Location"
+              src="https://maps.google.com/maps?q=Jalan+Permas+10,+Bandar+Baru+Permas+Jaya,+81750+Masai,+Johor,+Malaysia&t=&z=16&ie=UTF8&iwloc=B&output=embed"
+              width="100%"
+              height="420"
+              style={{ border: 0, display: 'block' }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+          <div className="map-directions-bar">
+            <span><i className="fa-solid fa-location-dot" /> 36-02 &amp; 36-03, Jalan Permas 10, Bandar Baru Permas Jaya, 81750 Masai, Johor, Malaysia</span>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Jalan+Permas+10+Bandar+Baru+Permas+Jaya+81750+Masai+Johor+Malaysia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary btn-sm"
+            >
+              <i className="fa-solid fa-diamond-turn-right" /> Get Directions
+            </a>
           </div>
         </div>
       </section>
