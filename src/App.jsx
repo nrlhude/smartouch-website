@@ -20,7 +20,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/smartouch-website">
       <ScrollToTop />
       <Navbar />
       <main style={{ paddingTop: 'var(--navbar-height)' }}>

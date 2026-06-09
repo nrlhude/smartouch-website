@@ -9,6 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" />
     <title>Smart Touch Technology | Building Smarter Workforces, Safer Operations</title>
+    <script>
+      (function(l) {
+        if (l.search[1] === 'p') {
+          var decoded = l.search.slice(1).split('&').reduce(function(s, v) {
+            var p = v.split('=');
+            return p[0] === 'p' ? s + '/' + p[1].replace(/~and~/g, '&') :
+                   p[0] === 'q' ? s + '?' + p[1].replace(/~and~/g, '&') : s;
+          }, '');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      }(window.location));
+    </script>
   </head>
   <body>
     <div id="root"></div>
