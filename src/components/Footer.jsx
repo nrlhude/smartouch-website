@@ -31,7 +31,7 @@ export default function Footer() {
             {/* Brand */}
             <div className="footer-brand">
               <Link to="/" className="footer-logo">
-                <img src="/logo.svg" alt="Smart Touch Technology" className="footer-logo-img" />
+                <img src="/logo.png" alt="Smart Touch Technology" className="footer-logo-img" />
               </Link>
               <p className="footer-tagline">
                 Building Smarter Workforces, Safer Operations.<br />

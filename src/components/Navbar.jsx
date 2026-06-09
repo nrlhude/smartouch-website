@@ -55,7 +55,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} ref={navRef}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <img src="/logo.svg" alt="Smart Touch Technology" className="navbar-logo-img" />
+          <img src="/logo.png" alt="Smart Touch Technology" className="navbar-logo-img" />
         </Link>
 
         <div className="navbar-links">
